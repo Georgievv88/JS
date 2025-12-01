@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Products CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Products</h1>
+
+      <form id="form">
+        <input id="id" placeholder="ID"/>
+        <input id="title" placeholder="Title" required />
+        <input id="price" placeholder="Price" type="number" required />
+        <input id="category" placeholder="Category" />
+        <input id="image" placeholder="Image URL" />
+        <input id="rate" placeholder="Rating (number)" type="number" />
+        <textarea id="description" placeholder="Description"></textarea>
+        <div>
+          <button type="submit" id="submitBtn">Add Product</button>
+        </div>
+      </form>
+
+      <table border="1px">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Rating</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tBody"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
