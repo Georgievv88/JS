@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: #121212;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  background: #1f1f1f;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #ffcc00;
+}
+.fav_nav h2 {
+  color: #ffcc00;
+}
+
+nav h2 {
+  margin: 0;
+  color: black;
+}
+.logo {
+  background-color: #ffcc00;
+  border-radius: 5px;
+}
+
+nav .fav-link {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-area {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-area input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.search-area button {
+  padding: 10px 15px;
+  background: #ffcc00;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.results {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  position: relative;
+}
+
+.card:hover {
+  text-decoration: underline;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  font-size: 27px;
+  cursor: pointer;
+  color: #ffcc00;
+}
